@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politik_Extremismus</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="Background-Image"></div>
+  <div class="Background-Container">
+    <div class="Background-Image2">
+      <div class="Image-Container">
+        <img class="HeadLine-Image" src="Headline-Without_Background.png" alt="">
+        <h1 class="Motto"><strong>#unsersiemens gegen Extremismus</strong></h1>
+        <h5 class="Ersteller">Von Luis Grahl, Friedrich Albrecht, Martin Schneider, Henrik Standke</h5>
+      </div>
+
+      <div class="Video-Container">
+        <img onclick="viewVideo()" class="HeadLine-Video" src="Screenshot 2024-12-15 180720.png" alt="">
+        <div class="Description-Container">
+          <p class="Description">
+            <strong>Thema:</strong> Extremismus – dessen Arten und Folgen<br><br>
+            Extremismus 
+Wenn Meinungen zu Verbrechen werden
+
+Als Extremismus werden Ideologien verstanden, die sich explizit gegen die Fundamente eines demokratischen Verfassungsstaates positionieren. Ihre Ideologen/Extremisten wollen den Staat mit seinen Gesetzen bekämpfen und sich ihm unterordnen, weil laut ihnen mit ihrer eigenen Ideologie der Staat besser funktionieren würde. Sie sei außerdem die einzig richtige Meinung und wer sich nicht unterordnen würde, ist ihr Feind gegen den man oft auch mit Gewalt vorgehen müsse. 
+Daher streben alle Extremisten eine Gesellschaft an in der es keine unterschiedlichen Menschen und Meinungen gibt. 
+Es wird meist in drei große Kategorien des Extremismus 
+unterteilt: 
+
+Linksextremismus: 
+
+Linksextremisten sehen sich als die „absolute Gewissheit“, die das Volk von allen gesellschaftlichen, wirtschaftlichen und politischen „Fesseln“ befreit. Dies wollen sie durch eine Kollektivierung der Gesellschaft erreichen, in der alle Menschen absolut das gleiche besitzen, denken und wollen. Der Status quo ist für sie kapitalistisch, faschistisch und imperialistisch, zusammen mit allen anderen die nicht in ihre Ideologie passen. 
+
+Beispiele für linksextreme Regierungen und Gruppierungen in der Geschichte, die mit ihrer Ideologie teilweise den Tod von Millionen zu verantworten haben sind: 
+Das Regime der Volksrepublik China, der Sowjetunion und die Khmer Rouge in Kambodscha, sowie die RAF in Deutschland. 
+
+Rechtsextremismus: 
+
+Rechtsextremisten leugnen die Gleichheit aller Menschen, weil sie die Minderwertigkeit verschiedener Menschen aufgrund ihrer Ethnie betonen. Sie lehnen daher die Grund- und Menschenrechte für alle ab. Dabei verharmlosen oder rechtfertigen sie oft die Verbrechen des Nationalsozialismus und ähnlichen gleichgesinnten Regimen. Aufgrund ihrer Idee der Überlegenheit vertreten Rechtsextreme eine isolationistische Politik, bei der Deutschland sich vom Rest der Welt abkapseln soll. Ihre Ideologie basiert auf einem rassistischen und faschistischen Weltbild, bei der nur eine von ihr ausgesuchten Gruppe oft mit einem einzelnen Führer existieren sollte. 
+Beispiele für rechtsextreme Regierungen und Gruppierungen in der Geschichte, die mit ihrer Ideologie teilweise den Tod von Millionen zu verantworten haben, sind: 
+Die Regierungen der Achsenmächte im 2. Weltkrieg 
+(Deutschland, Japan, Italien etc.), die Hutu-Power Bewegung in Ruanda, das Franco-Regime Spaniens und der NSU in Deutschland. 
+Religiöser Extremismus: 
+
+Religiöse Extremisten (auch Fundamentalisten genannt) wollen streng und sehr wörtlich die Regeln, Gesetze und Sitten ihrer eigenen Religion im Staat verankern und damit alle die anders glauben oder nicht glauben unterdrücken und zu ihrer Religion zwingen. Wer sich dem nicht untergeben will oder dem Weltbild entspricht, sei böse und kann bedroht und verfolgt werden. 
+
+Beispiele für extreme religiöse Regierungen (Theokratien) und Gruppierungen in der Geschichte, die mit ihrer Ideologie teilweise den Tod von Millionen zu verantworten haben, sind: 
+Das Mullah-Regime im Iran, Die Taliban-Regierung in Afghanistan, die Kreuzfahrer im Mittelalter, Al Quaida, der IS, der Kahanismus in Israel und die Hindutva-Bewegung in Indien. 
+
+Alle Extremisten eint also, dass sie eine pluralistische und vielfältige Gesellschaft ablehnen und damit eine Gleichschaltung anstreben. Dabei ist auch Gewalt ein übliches Mittel zur Dabei richten sie sich teils komplett gegen die freiheitlich demokratische Grundordnung (fdGO) Deutschlands. Diese enthält als Werte das Prinzip der Demokratie und Rechtsstaatlichkeit und die Gewaltenteilung, damit niemand einfach allein aus Deutschland einen ungerechten Staat machen kann. Freiheit, Gleichheit, Meinungsfreiheit und Toleranz sollen dabei die Rechte und Sicherheit von wirklich jedem schützen. Damit Extremisten keine dieser Werte angreifen können, sind im Grundgesetz Dinge wie das Partei- & Vereinsverbot sowie das Entziehen einzelner Rechte von Einzelpersonen verankert. Diese können dann vom Bundesverfassungsgericht genutzt werden, wenn Extremisten aktiv gegen die fdGO arbeiten. 
+
+            <br><br>
+            <strong>Hauptwerte der FDGO:</strong><br><br>
+            <strong>Demokratie</strong> - <strong>Rechtsstaatlichkeit</strong> - <strong>Freiheit</strong> - <strong>Gleichheit</strong> - <strong>Toleranz</strong> - <strong>Gewaltenteilung</strong> - <strong>Meinungsfreiheit</strong>
+            <Button onclick="viewPage()" class="Button1">Mehr erfahren</Button>
+            <a href="https://www.bpb.de/">BPB</a>  <br>
+            <a href="https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/verfassungsschutzberichte/2024-06-18-verfassungsschutzbericht-2023.html">Verfassungsschutzbericht 2023</a>
+          </p>
+          
+         
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button onclick="changePage(1)">1</button>
+    <button onclick="changePage(2)">2</button>
+    <button onclick="changePage(3)">3</button>
+  </div>
+
+</body>
+<script>
+  let currentPage = 1;
+
+  function changePage(pageNumber) {
+    currentPage = pageNumber;
+    showPage();
+  }
+
+  function showPage() {
+    const allSections = document.querySelectorAll('.page');
+    allSections.forEach((section, index) => {
+      if (index + 1 === currentPage) {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    });
+  }
+
+  function viewVideo() {
+    window.open("https://fromsmash.com/ABKECvA5Zu-dt", "_blank");
+  }
+
+  function viewPage() {
+    window.open("https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/verfassungsschutzberichte/2024-06-18-verfassungsschutzbericht-2023.html", "_blank");
+  }
+
+  showPage();
+</script>
+</html>
